@@ -2,6 +2,10 @@
     "version": 2,
     "builds": [
         {
+            "src": "/",
+            "use": "@vercel/node"
+        },
+        {
             "src": "routes/auth.js",
             "use": "@vercel/node"
         },
@@ -15,6 +19,10 @@
         }
     ],
     "routes": [
+        {
+            "src": "/",
+            "dest": "/server.js"
+        },
         {
             "src": "/api/auth/(.*)",
             "dest": "/routes/auth.js"
