@@ -7,6 +7,18 @@
     ],
     "routes": [
         {
+            "src": "/api/contacts/(.*)",
+            "dest": "/routes/contacts/$1.js"
+        },
+        {
+            "src": "/api/auth/(.*)",
+            "dest": "/routes/auth/$1.js"
+        },
+        {
+            "src": "/api/users/(.*)",
+            "dest": "/routes/users/$1.js"
+        },
+        {
             "src": "/(.*)",
             "dest": "/server.js"
         }
