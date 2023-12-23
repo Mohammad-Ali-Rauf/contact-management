@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://ali:123321@contact-management.w9wva3u.mongodb.net/database?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
+}
