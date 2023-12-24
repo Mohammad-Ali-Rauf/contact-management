@@ -1,9 +1,6 @@
 const express = require('express');
 const connectDB = require('./config/db');
 const path = require('path');
-const config = require('config');
-
-config.util.setModuleDefaults('mongoURI', require('./config/default.json'));
 
 const app = express();
 
